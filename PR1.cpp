@@ -19,7 +19,7 @@ for(i=0; i<3; i++)
 for(j=0; j<3; j++)
 {
 cout<<mat[i][j];
-cklout<<"row["<<j+1<<"]"<<endl;
+cout<<"row["<<j+1<<"]"<<endl;
 }
 }
 cout<<"\n";
