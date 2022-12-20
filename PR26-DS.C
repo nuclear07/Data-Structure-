@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int i,j,k,list1[5], list2[5], list3[10];
+clrscr();
+printf("\n both the table must be in a stored from");
+printf("\n enter 5 values for the first table \n");
+for(i=0; i<5; i++)
+{
+scanf("%d",&list1[i]);
+}
+printf("\n enter 5 values for the second table \n");
+
+for(j=0; j<5; j++)
+{
+scanf("%d",&list2[j]);
+}
+i=0;
+j=0;
+k=0;
+
+while((i<5)&&(j<5))
+{
+if(list1[i]<=list2[j])
+{
+list3[k]=list1[i];
+i++;
+k++;
+}
+else
+{
+list3[k]=list2[j];
+j++;
+k++;
+}
+}
+while(i<5)
+{
+list3[k]=list1[i];
+i++;
+k++;
+}
+while(j<5)
+{
+list3[k]=list2[j];
+j++;
+k++;
+}
+printf("\n sorted array is :");
+for(k=0; k<10; k++)
+printf("\n %d",list3[k]);
+getch();
+}
+
